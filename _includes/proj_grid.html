@@ -1,0 +1,24 @@
+{% assign limit = include.limit %}
+{% assign child_pages = site[page.collection]
+    | default: site.html_pages
+    | where: "parent", "Projects" %}
+
+{% include sorted_pages.html pages = child_pages %}
+
+{% assign sorted_pages = sorted_pages | reverse %}
+
+<div class="grid-container">
+{% for page in sorted_pages %}
+{% if limit <= 0 %}
+{% break %}
+{% endif %}
+{% if page.splash %}
+{% assign limit = limit | minus: 1 %}
+<a class="grid-item {% if include.preview == true %} grid-item-preview {% endif %}" href="{{ page.url }}" style="background-image: url({{ page.splash }})">
+<div class="grid-hover">
+    <span class="grid-item-title">{{ page.title }}</span>
+</div>
+</a>
+{% endif %}
+{% endfor %}
+</div>
