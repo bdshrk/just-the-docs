@@ -1,11 +1,8 @@
-iframe[title="YouTube video player"] {
+iframe[title="YouTube video player"], video {
 	width: 100%;
 	aspect-ratio: 16/9;
 	display: block;
-	margin-bottom: 15px;
-}
 
-video {
-	width: 100%;
-	aspect-ratio: 16/9;
+	margin-bottom: 1em;
+    margin-top: 1em;
 }
