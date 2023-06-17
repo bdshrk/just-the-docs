@@ -244,3 +244,8 @@ pre.highlight {
 }
 
 // {% endraw %}
+
+// override line height
+.highlight pre {
+  line-height: 1;
+}
