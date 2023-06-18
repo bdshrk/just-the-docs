@@ -1,0 +1,41 @@
+.form-text-input > input, .form-text-input > textarea {
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0.5em;
+    color: inherit;
+}
+
+.form-text-input {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    aspect-ratio: 16/9;
+}
+
+.form-section {
+    display: block;
+}
+
+.form-section > label {
+    width: 20%;
+    margin-top: 1.25em;
+}
+
+@media screen and (min-width: 31.25rem) {
+    .form-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .form-text-input {
+        width: 80%;
+    }
+}
