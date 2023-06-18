@@ -28,7 +28,7 @@ textarea {
     margin-top: 1.25em;
 }
 
-@media screen and (min-width: map.get($media-queries, "sm")) {
+@media screen and (min-width: map-get($media-queries, "sm")) {
     .form-section {
         display: flex;
         flex-direction: row;
