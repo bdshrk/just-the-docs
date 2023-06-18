@@ -24,17 +24,17 @@
     border-left: 0;
 }
 
-@media screen and (min-width: 20rem) {
+@media screen and (min-width: map.get($media-queries, "xm")) {
     .grid-item {
         width: 50%;
     }
 }
-@media screen and (min-width: 31.25rem) {
+@media screen and (min-width: map.get($media-queries, "sm")) {
     .grid-item {
         width: calc(100% / 3);
     }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: map.get($media-queries, "md")) {
     .grid-container {
         width: calc(100% + 4rem + 1px);
         transform: translate(calc(-2rem - 1px), 0);

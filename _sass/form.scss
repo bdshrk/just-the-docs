@@ -28,13 +28,13 @@ textarea {
     margin-top: 1.25em;
 }
 
-@media screen and (min-width: 31.25rem) {
+@media screen and (min-width: map.get($media-queries, "sm")) {
     .form-section {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
     }
-    
+
     .form-text-input {
         width: 80%;
     }
