@@ -245,7 +245,8 @@ pre.highlight {
 
 // {% endraw %}
 
-// override line height
-.highlight pre {
+// override line height and tab size
+.highlight pre, code {
   line-height: 1;
+  tab-size: 4;
 }
