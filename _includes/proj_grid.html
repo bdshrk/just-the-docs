@@ -1,7 +1,7 @@
 {% assign limit = include.limit %}
 {% assign child_pages = site[page.collection]
     | default: site.html_pages
-    | where: "parent", "Projects" %}
+    | where: "parent", "Portfolio" %}
 
 {% include sorted_pages.html pages = child_pages %}
 
