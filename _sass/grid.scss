@@ -24,7 +24,7 @@
     border-left: 0;
 }
 
-@include mq(xm) {
+@include mq(xs) {
     .grid-item {
         width: 50%;
     }
