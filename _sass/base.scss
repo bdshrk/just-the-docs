@@ -21,6 +21,9 @@ body {
   line-height: $body-line-height;
   color: $body-text-color;
   background-color: $body-background-color;
+  background: url("/assets/images/background.png");
+  background-attachment: fixed;
+  background-repeat: repeat;
   overflow-wrap: break-word;
 }
 

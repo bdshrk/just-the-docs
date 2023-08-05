@@ -56,7 +56,7 @@
   @include mq(md) {
     padding: $sp-2 $gutter-spacing-sm $sp-2 #{$gutter-spacing + $sp-5};
     font-size: 0.875rem;
-    background-color: $body-background-color;
+    background-color: transparent;
     transition: padding-left linear #{$transition-duration * 0.5};
   }
 
