@@ -76,7 +76,7 @@ function initNav() {
 // The page-specific stylesheet is assumed to have index 1 in the list of stylesheets.
 
 function disableHeadStyleSheet() {
-  document.styleSheets[1].disabled = true;
+  if (document.styleSheets.length > 1) document.styleSheets[1].disabled = true;
 }
 
 {%- if site.search_enabled != false %}
