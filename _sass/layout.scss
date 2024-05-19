@@ -41,7 +41,7 @@
 
       @include mq(md) {
         display: flex;
-        background-color: $body-background-color;
+        background-color: transparent;
       }
 
       &.nav-open {
